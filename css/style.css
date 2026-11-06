@@ -195,7 +195,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;op
 .track i{color:var(--green);font-style:normal;font-size:20px;display:inline-block;animation:spin 6s linear infinite}
 
 /* ---------- sections ---------- */
-.section{padding:clamp(80px,11vw,150px) var(--pad);position:relative}
+.section{padding:clamp(60px,7.5vw,104px) var(--pad);position:relative}
 .sec-head{margin-bottom:clamp(36px,5vw,64px);max-width:900px}
 .eyebrow{display:flex;align-items:center;gap:12px;color:var(--aqua);font-size:11px}
 .eyebrow span{display:inline-flex;align-items:center;gap:12px;color:var(--text)}
@@ -579,3 +579,45 @@ h2 em.grad .w>span,h2 em.grad:not(:has(.w)){background:var(--grad-flow);backgrou
 #why::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.55;
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'%3E%3Cpath d='M28 0l28 16v32L28 64 0 48V16zM28 64v33M0 16L-28 0M56 16L84 0' fill='none' stroke='%233b9bff' stroke-opacity='.10'/%3E%3C/svg%3E");
   -webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000,transparent 70%);mask-image:radial-gradient(ellipse at 70% 40%,#000,transparent 70%)}
+
+/* fill: hero live log */
+.log{margin-top:26px;border:1px solid var(--line2);border-radius:14px;background:rgba(3,10,15,.75);backdrop-filter:blur(6px);overflow:hidden;max-width:620px;
+  opacity:0;animation:fade .9s 1.3s forwards}
+.log-bar{display:flex;justify-content:space-between;padding:9px 14px;font-size:10px;color:var(--muted);border-bottom:1px solid var(--line);background:rgba(8,23,32,.8)}
+.log-body{height:118px;padding:10px 14px;font-size:11.5px;line-height:1.75;text-transform:none;letter-spacing:.02em;color:#a9c4cb;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+.log-body p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;animation:fade .4s both}
+.log-body .t{color:var(--dim);margin-right:8px}
+.log-body .ok{color:var(--green)}.log-body .warn{color:#f5c76b}.log-body .go{color:var(--aqua)}
+
+/* fill: journey dates follow the reader */
+.t-when{position:sticky;top:110px;align-self:start}
+@media (max-width:900px){.t-when{position:static}}
+
+/* fill: credentials seal */
+.cred-grid{align-items:stretch}
+.cred{display:flex;flex-direction:column}
+.seal{margin-top:auto;padding-top:22px;display:flex;align-items:center;gap:18px;border-top:1px dashed var(--line2)}
+.seal svg{width:118px;height:118px;flex:0 0 auto;overflow:visible}
+.seal-ring{transform-origin:100px 100px;animation:spin 18s linear infinite}
+.seal text{font:600 13px var(--mono);letter-spacing:.28em;fill:var(--aqua)}
+.seal-in{fill:rgba(46,242,217,.06);stroke:url(#pg);stroke:var(--green);stroke-width:1.5;stroke-dasharray:4 5;animation:spin 30s linear infinite reverse;transform-origin:100px 100px}
+.seal-tick{fill:none;stroke:var(--green);stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:80;stroke-dashoffset:80}
+.in .seal-tick{animation:draw 1.2s .4s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.seal p{font-size:11px;color:var(--text);line-height:1.7}
+.seal p span{color:var(--muted)}
+
+/* fill: education signal scope */
+.scope{margin-top:auto;padding-top:20px;border-top:1px dashed var(--line2)}
+.scope-head{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-bottom:10px}
+.scope svg{width:100%;height:96px;display:block;border-radius:10px;background:rgba(3,10,15,.6);box-shadow:inset 0 0 0 1px var(--line)}
+.scope .grid-l{stroke:rgba(160,230,255,.08);stroke-width:1;fill:none}
+.scope .noise{stroke:#f5c76b;stroke-width:1.6;fill:none;opacity:.75}
+.scope .sig{stroke:var(--aqua);stroke-width:2.4;fill:none;filter:drop-shadow(0 0 6px rgba(46,242,217,.6));stroke-dasharray:18 6;animation:sigflow 1.2s linear infinite}
+@keyframes sigflow{to{stroke-dashoffset:-24}}
+.scope .noise{animation:jitter .18s steps(2) infinite}
+@keyframes jitter{50%{transform:translateY(2px)}}
+.scope svg{overflow:hidden}
+/* keep the decorative net graphics behind content */
+.net{z-index:0}
+.sec-head,.cred,.why-card,.lab-card,.flag,.pipe,.term,.timeline,.chain,.skill-cloud,.toolkit,.process,.about-text,.contact-grid{position:relative;z-index:1}

@@ -368,6 +368,28 @@
   }
   globe();
 
+  // ---- hero live log: the problem-finder loop, on repeat ----
+  const logEl = $('#log');
+  const LOG = [
+    ['go', '› scanning workflow for friction…'],
+    ['warn', '! bottleneck found: manual, repeated task'],
+    ['go', '› framing the problem with leadership…'],
+    ['go', '› choosing the fix: AI · process · hire · campaign'],
+    ['go', '› building & deploying solution…'],
+    ['ok', '✓ solution live — measuring impact'],
+    ['ok', '✓ insight delivered to decision-maker'],
+    ['go', '› next problem →']
+  ];
+  let li = 0;
+  function logTick() {
+    const [cls, msg] = LOG[li % LOG.length], t = new Date().toLocaleTimeString('en-GB', { timeZone: 'Asia/Kolkata', hour12: false });
+    const p = document.createElement('p'); p.innerHTML = `<span class="t">${t}</span><span class="${cls}">${msg}</span>`;
+    logEl.appendChild(p); while (logEl.children.length > 5) logEl.firstChild.remove();
+    li++; setTimeout(logTick, li % LOG.length === 0 ? 2400 : 1300);
+  }
+  if (reduce) LOG.slice(0, 5).forEach(([c, m]) => { const p = document.createElement('p'); p.innerHTML = `<span class="${c}">${m}</span>`; logEl.appendChild(p); });
+  else setTimeout(logTick, 1500);
+
   // ---- IST clock + year ----
   const clock = $('#clock');
   function tick() {
