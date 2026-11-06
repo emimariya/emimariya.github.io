@@ -621,3 +621,8 @@ h2 em.grad .w>span,h2 em.grad:not(:has(.w)){background:var(--grad-flow);backgrou
 /* keep the decorative net graphics behind content */
 .net{z-index:0}
 .sec-head,.cred,.why-card,.lab-card,.flag,.pipe,.term,.timeline,.chain,.skill-cloud,.toolkit,.process,.about-text,.contact-grid{position:relative;z-index:1}
+/* photo stays perfectly still: only the gradient border behind it moves */
+.ring{animation:none!important;transform:translate(-50%,-50%)!important;background:none;isolation:isolate}
+.ring::before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(var(--aqua),var(--blue),var(--green),var(--aqua));animation:spin 8s linear infinite;z-index:-1}
+.ring img{animation:none!important;transform:none!important;position:relative}
+.portrait:hover .ring img{transform:none!important}
