@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emil Mariya Benny — Portfolio</title>
+<meta name="description" content="Emil Mariya Benny — Business Development & Structuring Specialist. AI integration, data strategy and executive leadership at A Daga Steel and Industrial Corporation.">
+<meta property="og:title" content="Emil Mariya Benny — Portfolio">
+<meta property="og:description" content="Business Development & Structuring Specialist · AI Integration · Data Strategy · EA to MD">
+<meta property="og:image" content="assets/emil.png">
+<meta name="theme-color" content="#03080c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2303080c'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-size='30' fill='%232ef2d9'%3EE.%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <p class="ld-name">Emil Mariya Benny</p>
+  <p class="ld-num"><span id="ldn">0</span><small>%</small></p>
+  <div class="ld-bar"><i id="ldb"></i></div>
+  <p class="mono ld-sub">AI · Data · Growth · Structure</p>
+</div>
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+<div class="hud hud-l mono" aria-hidden="true"><span id="hudSec">00 · Home</span><i><b id="hudBar"></b></i><span id="hudPct">000%</span></div>
+<div class="hud hud-r mono" aria-hidden="true"><span>Kerala · IN</span><i></i><span>UTC+05:30</span></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="#top" class="brand">EMB<span>.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about"><i>01</i>About</a>
+    <a href="#why"><i>02</i>Why me</a>
+    <a href="#ailab"><i>03</i>AI Lab</a>
+    <a href="#flagship"><i>04</i>Role</a>
+    <a href="#journey"><i>05</i>Journey</a>
+    <a href="#matrix"><i>06</i>Skills</a>
+    <a href="#credentials"><i>07</i>Credentials</a>
+    <a href="#contact"><i>08</i>Contact</a>
+  </nav>
+  <a href="https://www.linkedin.com/in/emil-mariya-benny" class="nav-in" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.3-.02-3-1.83-3-1.83 0-2.1 1.43-2.1 2.9V21H9z"/></svg></a>
+  <a href="resume.html" class="btn btn-sm" target="_blank" rel="noopener">Résumé <b>↗</b></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-meta mono">
+    <span><b class="dot"></b> A Daga Steel and Industrial Corporation</span>
+    <span class="open"><b class="dot"></b> Open to opportunities</span>
+    <span>Kerala · India</span>
+    <span id="clock">IST --:--</span>
+  </div>
+
+  <h1 class="mega" aria-label="Portfolio">
+    <span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span>
+  </h1>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="hello">Hello, I'm</p>
+      <p class="tag">EMIL.</p>
+      <p class="motto">Problem finder. <span>Solution provider.</span></p>
+      <p class="mono kicker">▸ <span id="typed">Business Development &amp; Structuring Specialist</span><b class="caret"></b></p>
+      <p class="lede">
+        A senior strategic partner to the Managing Director, operating at the intersection of
+        <em>AI</em>, <em>data</em> and <em>business growth</em> — driving transformation across
+        technology, operations and strategy.
+      </p>
+      <div class="cta">
+        <a href="mailto:emilmariyab@gmail.com?subject=Opportunity%20for%20Emil%20Mariya%20Benny" class="btn">Hire me <b>→</b></a>
+        <a href="resume.html" class="btn btn-ghost" target="_blank" rel="noopener">View résumé <b>↗</b></a>
+        <a href="https://www.linkedin.com/in/emil-mariya-benny" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn <b>↗</b></a>
+      </div>
+      <ul class="stats stagger">
+        <li><strong data-count="6">0</strong><sup>+</sup><span>Years of experience, since 2020</span></li>
+        <li><strong data-count="6">0</strong><span>Areas of responsibility today</span></li>
+        <li><strong data-count="500">0</strong><sup>+</sup><span>LinkedIn connections</span></li>
+        <li><strong data-count="8">0</strong><sup>+</sup><span>Roles since 2020</span></li>
+      </ul>
+    </div>
+
+    <figure class="portrait" id="portrait">
+      <div class="portrait-panel">
+        <div class="halo"></div>
+        <div class="orbit o1"><i></i></div>
+        <div class="orbit o2"><i></i></div>
+        <div class="orbit o3"><i></i></div>
+        <div class="ring">
+          <img src="assets/emil.png" alt="Portrait of Emil Mariya Benny" width="640" height="640">
+        </div>
+        <span class="corner tl mono">Kerala, India</span>
+        <span class="corner tr mono">AI · DATA · GROWTH</span>
+        <span class="corner bl mono">EA to MD</span>
+        <span class="corner br mono">Since 2020</span>
+        <span class="float-chip c1 mono"><b class="dot"></b> AI Integration</span>
+        <span class="float-chip c2 mono">Builds with AI</span>
+        <span class="float-chip c3 mono">Digital Marketing</span>
+      </div>
+      <figcaption class="mono"><b>●</b> Business Development &amp; Structuring — A Daga Steel &amp; Industrial Corporation</figcaption>
+      <div class="sys mono" aria-hidden="true">
+        <div class="sys-head"><span>emb://status</span><span class="blink">● live</span></div>
+        <p><span>ai_integration</span><i></i><b>active</b></p>
+        <p><span>data_strategy</span><i></i><b>active</b></p>
+        <p><span>digital_marketing</span><i></i><b>active</b></p>
+        <p><span>business_development</span><i></i><b>active</b></p>
+        <div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </figure>
+  </div>
+
+  <a href="#about" class="scroll-cue mono">Scroll <span></span></a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Business Development</span><i>✦</i><span>AI Integration</span><i>✦</i><span>Data Strategy</span><i>✦</i><span>Structuring</span><i>✦</i><span>Executive Assistant to MD</span><i>✦</i><span>Customer Support</span><i>✦</i><span>Digital Marketing</span><i>✦</i><span>HR &amp; Talent</span><i>✦</i><span>Product Management</span><i>✦</i>
+    <span>Business Development</span><i>✦</i><span>AI Integration</span><i>✦</i><span>Data Strategy</span><i>✦</i><span>Structuring</span><i>✦</i><span>Executive Assistant to MD</span><i>✦</i><span>Customer Support</span><i>✦</i><span>Digital Marketing</span><i>✦</i><span>HR &amp; Talent</span><i>✦</i><span>Product Management</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ============ 01 ABOUT ============ -->
+<section class="section" id="about">
+  <header class="sec-head reveal">
+    <p class="eyebrow mono"><span>01</span> About me</p>
+    <h2>Background &amp; Philosophy</h2>
+  </header>
+
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p class="big">
+        An Electronics &amp; Communication engineer who chose business — and kept the engineer's habit
+        of taking things apart to see why they don't work.
+      </p>
+      <p>
+        I'm happiest in the space between the boardroom and the build: listening to what leadership
+        actually needs, finding the bottleneck nobody has named yet, and then closing the gap myself —
+        with AI, a cleaner process, the right hire or a sharper campaign.
+      </p>
+      <p>
+        Curiosity is the operating system. If a task is repeated twice, I'll ask whether a tool should do it;
+        if a decision is made on gut feel, I'll ask what the data says.
+      </p>
+      <blockquote>
+        “I believe great ideas come from bold conversations and maybe… a little caffeine.”
+      </blockquote>
+    </div>
+
+  <div class="term reveal" aria-label="Profile summary as code">
+    <div class="term-bar"><i></i><i></i><i></i><span class="mono">~/emil/profile.json</span><span class="mono term-st">utf-8 · json</span></div>
+    <pre id="termCode"></pre>
+  </div>
+  </div>
+</section>
+
+<!-- ============ 02 WHY ME ============ -->
+<section class="section" id="why">
+  <header class="sec-head reveal">
+    <p class="eyebrow mono"><span>02</span> Why hire me</p>
+    <h2>Problem Finder.<br><em class="grad">Solution Provider.</em></h2>
+    <p class="sec-sub">I look for what is slowing a business down, then build the fix — with AI, data, marketing, people or process. Here is what you get, and where I've already done it.</p>
+  </header>
+
+  <div class="why stagger">
+    <article class="why-card">
+      <span class="why-ic">⌕</span>
+      <h3>Finds the real problem</h3>
+      <p>Asks the uncomfortable "why" until the cause shows up — so the fix lands on the right thing the first time.</p>
+      <p class="proof mono">Strategy · structuring · leadership</p>
+    </article>
+    <article class="why-card">
+      <span class="why-ic">⚡</span>
+      <h3>Turns AI into results</h3>
+      <p>Moves a team from "we should try AI" to tools people use every day — without waiting for a dev team.</p>
+      <p class="proof mono">AI integration · automation</p>
+    </article>
+    <article class="why-card">
+      <span class="why-ic">◈</span>
+      <h3>Makes data decision-ready</h3>
+      <p>Replaces gut feel with a clear view: the numbers that matter, in front of the person who decides.</p>
+      <p class="proof mono">Data strategy · BI</p>
+    </article>
+    <article class="why-card">
+      <span class="why-ic">↗</span>
+      <h3>Grows the pipeline</h3>
+      <p>Connects outreach, content and campaigns into one engine that brings in conversations, not just clicks.</p>
+      <p class="proof mono">Sales · digital marketing · SEO</p>
+    </article>
+    <article class="why-card">
+      <span class="why-ic">⚙</span>
+      <h3>Builds teams that hold</h3>
+      <p>Hires for the gap, onboards properly, and puts the processes in place so the team keeps working when it grows.</p>
+      <p class="proof mono">HR · talent · process</p>
+    </article>
+    <article class="why-card">
+      <span class="why-ic">✦</span>
+      <h3>Trusted at the top</h3>
+      <p>Comfortable as a leader's right hand — discreet, organised, and able to act on their behalf.</p>
+      <p class="proof mono">Executive support · confidentiality</p>
+    </article>
+
+    <p class="mono label">How I work</p>
+    <ol class="steps">
+      <li><b>01</b><h4>Find</h4><p>Dig into the workflow and the data to locate the real bottleneck.</p></li>
+      <li><b>02</b><h4>Frame</h4><p>Structure the problem and the options with leadership.</p></li>
+      <li><b>03</b><h4>Build</h4><p>Ship the fix — an AI tool, a process, a campaign or a hire.</p></li>
+      <li><b>04</b><h4>Measure</h4><p>Track what changed, refine, and make it repeatable.</p></li>
+    </ol>
+  </div>
+
+</section>
+
+<!-- ============ 03 AI LAB ============ -->
+<section class="section" id="ailab">
+  <header class="sec-head reveal">
+    <p class="eyebrow mono"><span>03</span> AI Lab</p>
+    <h2>I Don't Just Use AI.<br><em class="grad">I Build With It.</em></h2>
+    <p class="sec-sub">Most people use AI to write emails. I use AI agents to ship working things — apps, dashboards, content and campaigns — in days, not quarters. Each one starts with a single prompt.</p>
+  </header>
+
+  <div class="lab stagger">
+    <article class="lab-card big">
+      <p class="lab-prompt mono"><b>&gt;</b> turn this business idea into a working demo app</p>
+      <div class="lab-stat"><strong class="grad">Apps</strong><span>idea → working product</span></div>
+      <h3>Custom business applications</h3>
+      <p>I take a business need, research it, and build a working web application with AI agents — screens, data, access control and all — so leadership can see and test the idea instead of reading about it.</p>
+      <p class="lab-tags"><span>AI agents</span><span>Web apps</span><span>Research</span><span>Business development</span></p>
+    </article>
+    <article class="lab-card">
+      <p class="lab-prompt mono"><b>&gt;</b> show me the numbers live, not in a monthly report</p>
+      <div class="lab-stat"><strong class="grad">Live</strong><span>data, not reports</span></div>
+      <h3>Dashboards &amp; data tools</h3>
+      <p>Live dashboards and internal tools that pull data together, keep it current and put the right view in front of the right person.</p>
+      <p class="lab-tags"><span>Data</span><span>Automation</span></p>
+    </article>
+    <article class="lab-card">
+      <p class="lab-prompt mono"><b>&gt;</b> make our product range ready for social media</p>
+      <div class="lab-stat"><strong class="grad">Content</strong><span>at production scale</span></div>
+      <h3>AI content studio</h3>
+      <p>Product imagery, catalogues, posts and short videos produced with AI — and scheduled to publish automatically.</p>
+      <p class="lab-tags"><span>Computer vision</span><span>Marketing</span></p>
+    </article>
+    <article class="lab-card">
+      <p class="lab-prompt mono"><b>&gt;</b> research this market and draft the first outreach</p>
+      <div class="lab-stat"><strong class="grad">Reach</strong><span>research → outreach</span></div>
+      <h3>AI research &amp; outreach</h3>
+      <p>Market research, briefings, proposals and outreach drafted with AI, then followed up and tracked so nothing slips.</p>
+      <p class="lab-tags"><span>Sales</span><span>Research</span><span>CRM</span></p>
+    </article>
+    <article class="lab-card">
+      <p class="lab-prompt mono"><b>&gt;</b> plan the campaign, set the audience, watch the spend</p>
+      <div class="lab-stat"><strong class="grad">Ads</strong><span>planned &amp; monitored</span></div>
+      <h3>AI-assisted ad campaigns</h3>
+      <p>Audiences, budgets and campaign structure set up and monitored with AI connected directly to the ad platform.</p>
+      <p class="lab-tags"><span>Digital marketing</span><span>Analytics</span></p>
+    </article>
+    <article class="lab-card">
+      <p class="lab-prompt mono"><b>&gt;</b> here's a reel I like — make my portfolio from it</p>
+      <div class="lab-stat"><strong class="grad">You're here</strong><span>this website</span></div>
+      <h3>This portfolio</h3>
+      <p>Designed and built with AI from a reference video: the animations, the terminal, the pipeline and the résumé you can download.</p>
+      <p class="lab-tags"><span>Design</span><span>Web</span></p>
+    </article>
+  </div>
+
+  <div class="toolkit reveal">
+    <p class="mono label">My AI toolkit</p>
+    <div><span>Claude</span><span>Claude Code</span><span>AI agents</span><span>MCP connectors</span><span>Prompt engineering</span><span>Python</span><span>Automation</span><span>Canva</span><span>Meta Ads</span><span>CRM</span></div>
+  </div>
+</section>
+
+<!-- ============ BLOCKCHAIN BAND ============ -->
+<div class="chain" aria-hidden="true">
+  <div class="chain-head mono"><span><b class="dot"></b> ledger://emb</span><span id="chainStat">syncing…</span></div>
+  <div class="chain-track" id="chain"></div>
+</div>
+
+<!-- ============ 04 FLAGSHIP ============ -->
+<section class="section" id="flagship">
+  <header class="sec-head reveal">
+    <p class="eyebrow mono"><span>04</span> Current role</p>
+    <h2>Flagship Role</h2>
+    <p class="sec-sub">Where the work happens today.</p>
+  </header>
+
+  <article class="flag reveal">
+    <span class="bignum" data-speed=".15" aria-hidden="true">04</span>
+    <div class="flag-top">
+      <div class="flag-logo"><img src="assets/adaga-logo.png" alt="A Daga Group logo" width="400" height="304"></div>
+      <div>
+        <p class="mono label red"><b class="dot"></b> Present · Jan 2026 – Present · 11 mos</p>
+        <h3>Business Development &amp; Structuring Specialist</h3>
+        <p class="flag-sub">AI Integration, Data Strategy | EA to MD</p>
+        <p class="flag-org">A Daga Steel and Industrial Corporation <span>· Elecmatics · A Daga Group</span></p>
+      </div>
+    </div>
+    <p class="flag-intro">
+      A senior strategic partner to the Managing Director, operating at the intersection of AI, data and business growth.
+      The role goes far beyond traditional executive support — driving transformation across technology, operations and strategy at the highest level.
+    </p>
+
+    <div class="pillars stagger">
+      <div class="pillar"><span class="num">01</span><h4>AI Integration &amp; Innovation</h4><ul><li>Deploying AI tools and automation across business functions to boost efficiency and enable smarter decisions.</li><li>Leading an AI-first digital transformation agenda organisation-wide.</li></ul><p class="chip">AI-first</p></div>
+      <div class="pillar"><span class="num">02</span><h4>Data Strategy &amp; Management</h4><ul><li>Building and managing data infrastructure that turns raw information into leadership-level insights.</li><li>Developing scalable systems to support long-term business intelligence.</li></ul><p class="chip">BI · Systems</p></div>
+      <div class="pillar"><span class="num">03</span><h4>Executive &amp; Organisational Leadership</h4><ul><li>Partnering with the MD on strategic planning, company structuring and key decisions.</li><li>Acting as a trusted proxy across internal operations and external engagements.</li></ul><p class="chip">MD's office</p></div>
+      <div class="pillar"><span class="num">04</span><h4>Technology &amp; Digital</h4><ul><li>Owning website management, application development, and the full digital ecosystem.</li></ul><p class="chip">Web · Apps</p></div>
+      <div class="pillar"><span class="num">05</span><h4>Sales, Marketing &amp; Growth</h4><ul><li>Executing sales outreach strategies and overseeing digital marketing operations.</li><li>Aligning growth initiatives with the MD's business vision.</li></ul><p class="chip">Outreach</p></div>
+      <div class="pillar"><span class="num">06</span><h4>Talent Acquisition</h4><ul><li>Leading end-to-end hiring aligned with company strategy.</li></ul><p class="chip">HR · Hiring</p></div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ 03 JOURNEY ============ -->
+<section class="section" id="journey">
+  <header class="sec-head reveal">
+    <p class="eyebrow mono"><span>05</span> Experience</p>
+    <h2>The Journey</h2>
+    <p class="sec-sub">From internships in 2020 to the Managing Director's office.</p>
+  </header>
+
+  <div class="timeline"><span class="t-line" aria-hidden="true"><i id="tline"></i></span>
+    <article class="t-item reveal">
+      <div class="t-when mono">Oct 2024<br>— Oct 2025<small>1 yr 1 mo · Australia</small></div>
+      <div class="t-body">
+        <h3>Executive Assistant to the Founder <span>| Executive Customer Support Specialist</span></h3>
+        <p class="t-org">Conor Australia · Full-time</p>
+        <p>As an Executive Assistant to the Founder, I worked closely with the founder to support strategic, operational and day-to-day business functions. The role went beyond traditional administrative responsibilities, involving active participation in decision-making, cross-functional coordination and business growth initiatives.</p>
+        <ul class="t-list">
+          <li><b>Founder support &amp; calendar management</b> — managed the founder's schedule, prioritised meetings and supported key founder-level responsibilities.</li>
+          <li><b>Cross-department coordination</b> — oversaw and coordinated multiple departments to ensure alignment with business goals and timely execution of tasks.</li>
+          <li><b>Website management</b> — handled website updates and performance monitoring, and ensured a smooth user experience.</li>
+          <li><b>Content &amp; SEO management</b> — planned, created and optimised content while implementing SEO strategies to improve online visibility and engagement.</li>
+          <li><b>Digital marketing</b> — managed and executed campaigns across platforms to drive brand awareness and lead generation.</li>
+          <li><b>Product management</b> — assisted in product planning, development coordination and execution for timely delivery and market relevance.</li>
+          <li><b>Hiring &amp; talent acquisition</b> — supported recruitment, including sourcing, screening and onboarding candidates.</li>
+          <li><b>Company structuring</b> — contributed to building internal processes, improving workflows and supporting organisational growth.</li>
+        </ul>
+        <p class="tags"><span>Microsoft Excel</span><span>Confidentiality</span><span>+63 skills</span></p>
+      </div>
+    </article>
+
+    <article class="t-item reveal">
+      <div class="t-when mono">Jul 2022<br>— Oct 2023<small>1 yr 4 mos · Kochi, Kerala</small></div>
+      <div class="t-body">
+        <h3>Consultant — Design and Communication</h3>
+        <p class="t-org">CCS Technologies Pvt. Ltd · Full-time</p>
+        <p class="tags"><span>Microsoft Excel</span><span>Teamwork</span><span>+19 skills</span></p>
+      </div>
+    </article>
+
+    <article class="t-item reveal">
+      <div class="t-when mono">May 2021<br>— Jul 2022<small>1 yr 3 mos · Kerala</small></div>
+      <div class="t-body">
+        <h3>Content Writer</h3>
+        <p class="t-org">AdAid · Part-time</p>
+        <p class="tags"><span>Writing</span><span>English</span></p>
+      </div>
+    </article>
+
+    <article class="t-item reveal">
+      <div class="t-when mono">May 2021<br>— Jul 2022<small>1 yr 3 mos · Kerala</small></div>
+      <div class="t-body">
+        <h3>Student Member — μLearn</h3>
+        <p class="t-org">Group of Technology Companies (GTech) · Full-time</p>
+      </div>
+    </article>
+
+    <article class="t-item reveal">
+      <div class="t-when mono">Oct 2021<br>— Dec 2021<small>3 mos · Kozhikode, Kerala</small></div>
+      <div class="t-body">
+        <h3>Python Developer</h3>
+        <p class="t-org">Codelattice · Internship</p>
+      </div>
+    </article>
+
+    <article class="t-item reveal">
+      <div class="t-when mono">Sep 2020<br>— Oct 2020<small>2 mos</small></div>
+      <div class="t-body">
+        <h3>Business Development Intern</h3>
+        <p class="t-org">Innovators and You · Internship</p>
+        <p>Awarded a Certificate of Achievement — Innovators And You Marketing Internship.</p>
+      </div>
+    </article>
+
+    <article class="t-item reveal">
+      <div class="t-when mono">Sep 2020<br>— Oct 2020<small>2 mos</small></div>
+      <div class="t-body">
+        <h3>Support Intern</h3>
+        <p class="t-org">Muskurahat Foundation · Internship</p>
+      </div>
+    </article>
+
+    <article class="t-item reveal founder">
+      <div class="t-when mono">Dec 2018<br>— Present<small>Organisation</small></div>
+      <div class="t-body">
+        <h3>Co-Founder &amp; E-commerce Business Analyst and Products Manager</h3>
+        <p class="t-org">My-cart.in</p>
+        <p>A start-up e-commerce website that lets you buy and sell tangible goods, digital products or services online.</p>
+        <p class="tags"><span>E-Commerce</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 04 MATRIX ============ -->
+<section class="section" id="matrix">
+  <header class="sec-head reveal">
+    <p class="eyebrow mono"><span>06</span> Capabilities</p>
+    <h2>Skills &amp; Stack</h2>
+    <p class="sec-sub">How the work flows — and the skills behind it.</p>
+  </header>
+
+  <div class="pipe reveal" aria-label="From raw data to business growth">
+    <svg viewBox="0 0 1000 150" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient id="pg" x1="0" x2="1"><stop offset="0" stop-color="#2ef2d9"/><stop offset=".5" stop-color="#3b9bff"/><stop offset="1" stop-color="#3ee08a"/></linearGradient>
+        <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <path class="p-base" d="M110 75 H890"/>
+      <path class="p-flow" d="M110 75 H890" stroke="url(#pg)"/>
+      <circle class="pulse" r="5" fill="#2ef2d9" filter="url(#glow)"><animateMotion dur="3.2s" repeatCount="indefinite" path="M110 75 H890"/></circle>
+      <circle class="pulse" r="4" fill="#3ee08a" filter="url(#glow)"><animateMotion dur="3.2s" begin="1.6s" repeatCount="indefinite" path="M110 75 H890"/></circle>
+      <g class="node"><circle cx="110" cy="75" r="34"/><text x="110" y="80">DATA</text><text class="sub" x="110" y="135">raw information</text></g>
+      <g class="node"><circle cx="370" cy="75" r="34"/><text x="370" y="80">AI</text><text class="sub" x="370" y="135">tools &amp; automation</text></g>
+      <g class="node"><circle cx="630" cy="75" r="34"/><text x="630" y="80">INSIGHT</text><text class="sub" x="630" y="135">leadership-level</text></g>
+      <g class="node"><circle cx="890" cy="75" r="34"/><text x="890" y="80">GROWTH</text><text class="sub" x="890" y="135">business vision</text></g>
+    </svg>
+  </div>
+
+  <div class="skill-cloud reveal stagger">
+    <span>Business Development</span><span>Company Structuring</span><span>AI Integration</span><span>Data Strategy</span><span>Digital Marketing</span><span>SEO</span><span>Website Management</span><span>Application Development</span><span>Product Management</span><span>E-Commerce</span><span>Human Resources</span><span>Talent Acquisition</span><span>Recruitment &amp; Onboarding</span><span>Executive Customer Support</span><span>Task Management</span><span>Personal Assistance</span><span>Confidentiality</span><span>Microsoft Excel</span><span>Teamwork</span><span>Writing</span><span>English</span><span>Python</span>
+  </div>
+</section>
+
+<!-- ============ 05 CREDENTIALS ============ -->
+<section class="section" id="credentials">
+  <header class="sec-head reveal">
+    <p class="eyebrow mono"><span>07</span> Foundations</p>
+    <h2>Credentials &amp; Community</h2>
+  </header>
+
+  <div class="cred-grid">
+    <div class="cred reveal">
+      <p class="mono label">Education</p>
+      <div class="cred-item">
+        <h3>Bachelor of Technology — B.Tech, Electronics and Communication</h3>
+        <p class="t-org">College of Engineering, Munnar · Jan 2018 – Jan 2022</p>
+        <p>NSS Volunteer Secretary · IEEE SB CEM Student Member (2018–2019) · IEDC Student Member · IEEE SB CEM PELS Vice Chair (2019)</p>
+      </div>
+      <div class="cred-item">
+        <h3>Computer Science</h3>
+        <p class="t-org">St. George Higher Secondary School, Kattappana · 2016 – 2018</p>
+        <p>NCC · School Mock Parliament · Math game participant</p>
+      </div>
+    </div>
+
+    <div class="cred reveal">
+      <p class="mono label">Certifications</p>
+      <div class="cred-item row">
+        <span class="badge">PM</span>
+        <div><h3>Product Management</h3><p class="t-org">Great Learning · Issued Feb 2023</p></div>
+      </div>
+      <div class="cred-item row">
+        <span class="badge">SEO</span>
+        <div><h3>SEO</h3><p class="t-org">HubSpot Academy · Issued Feb 2023</p><p class="cred-id mono">Credential ID 5b5bb54ad0874a40afe5e4ce2c0a9a41</p></div>
+      </div>
+      <div class="cred-item row">
+        <span class="badge">BD</span>
+        <div><h3>Certificate of Achievement — Marketing Internship</h3><p class="t-org">Innovators And You · Oct 2020</p></div>
+      </div>
+    </div>
+
+    <div class="cred reveal wide">
+      <p class="mono label">Volunteering (6)</p>
+      <ul class="vol stagger">
+        <li><b>Volunteer Secretary</b><span>NSS CE Munnar</span><em>Aug 2018 – Present · Social services</em></li>
+        <li><b>Student Volunteer</b><span>IEDC Kerala Startup Mission</span><em>Aug 2018 – Present · Science &amp; technology</em></li>
+        <li><b>Volunteer</b><span>IEEE SB CEM</span><em>Aug 2018 – Aug 2019 · Science &amp; technology</em></li>
+        <li><b>Idukki District Coordinator</b><span>Kites Foundation</span><em>Feb 2021 · Education</em></li>
+        <li><b>Volunteer</b><span>code4munnar</span><em>Feb 2021 · Social services</em></li>
+        <li><b>Volunteer</b><span>IEEE SB CE Munnar — Landslide Symposium</span><em>Disaster and humanitarian relief</em></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 CONTACT ============ -->
+<section class="section contact" id="contact">
+  <canvas id="globe" aria-hidden="true"></canvas>
+  <p class="eyebrow mono reveal"><span>08</span> Get in touch</p>
+  <h2 class="reveal">Got a Problem?<br>Let's Find the <em>Solution.</em></h2>
+  <p class="sec-sub reveal">Hiring for business development, AI integration, data strategy, HR, digital marketing or an executive role? I'm open to opportunities — let's talk.</p>
+  <p class="prompt mono reveal">emil@portfolio:~$ <span>connect --email --phone --linkedin</span><b class="caret"></b></p>
+  <div class="contact-grid reveal stagger">
+    <a class="c-card" href="mailto:emilmariyab@gmail.com"><span class="mono label">Email</span><b>emilmariyab@gmail.com</b><i>↗</i></a>
+    <a class="c-card" href="tel:+917306874014"><span class="mono label">Phone</span><b>+91 73068 74014</b><i>↗</i></a>
+    <a class="c-card" href="https://www.linkedin.com/in/emil-mariya-benny" target="_blank" rel="noopener"><span class="mono label">LinkedIn</span><b>linkedin.com/in/emil-mariya-benny</b><i>↗</i></a>
+    <a class="c-card" href="resume.html" target="_blank" rel="noopener"><span class="mono label">Résumé</span><b>View &amp; download</b><i>↗</i></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot mono">
+  <span>© <span id="yr">2026</span> Emil Mariya Benny</span>
+  <a href="mailto:emilmariyab@gmail.com">emilmariyab@gmail.com</a>
+  <a href="tel:+917306874014">+91 73068 74014</a>
+  <a href="https://www.linkedin.com/in/emil-mariya-benny" target="_blank" rel="noopener">LinkedIn ↗</a>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

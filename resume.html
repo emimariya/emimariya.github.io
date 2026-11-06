@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emil Mariya Benny — Résumé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7fafa; --ink:#17171a; --soft:#4a4a50; --mute:#808087; --hair:#d3e2e4;
+  --side:#071a24; --side2:#0c2532; --sidetext:#e6f3f5; --sidemute:#8eaab4;
+  --red:#0a7f86; --gold:#3fd6c6; --blue:#2f7fd8; --green:#22a866;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+@page{size:A4;margin:0}
+html{background:#2a2a2e}
+body{font:400 8.6pt/1.5 var(--sans);color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ul{list-style:none}
+a{color:inherit;text-decoration:none}
+
+.page{width:210mm;height:297mm;margin:10mm auto;background:var(--paper);display:grid;grid-template-columns:66mm 1fr;grid-template-rows:297mm;
+  overflow:hidden;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.page::after{content:"";position:absolute;left:66mm;right:0;top:0;height:2.2mm;background:linear-gradient(90deg,var(--gold),var(--blue) 50%,var(--green))}
+
+/* ---------- sidebar ---------- */
+aside{background:var(--side);color:var(--sidetext);padding:14mm 8mm 12mm 9mm;position:relative}
+aside::before{content:"";position:absolute;inset:5mm;border:.3mm solid rgba(63,214,198,.28);pointer-events:none}
+.photo{width:31mm;height:31mm;margin:0 auto 7mm;border-radius:50%;padding:1.2mm;background:conic-gradient(var(--gold),var(--blue),var(--green),var(--gold))}
+.photo img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;filter:contrast(1.04) saturate(.95)}
+.monogram{text-align:center;font:600 34pt/1 var(--serif);color:var(--gold);letter-spacing:.06em;margin:2mm 0 8mm}
+.monogram small{display:block;font:500 6.2pt var(--sans);letter-spacing:.32em;color:var(--sidemute);margin-top:2mm}
+.s-block{margin-bottom:6.4mm}
+.s-title{font:600 6.6pt var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:2.5mm;margin-bottom:3mm}
+.s-title::after{content:"";flex:1;height:.25mm;background:rgba(63,214,198,.35)}
+.contact li{display:grid;grid-template-columns:5mm 1fr;align-items:start;margin-bottom:2.2mm;font-size:7.9pt;line-height:1.35}
+.contact svg{width:3.2mm;height:3.2mm;stroke:var(--gold);fill:none;stroke-width:1.6;margin-top:.4mm}
+.contact span,.contact a{word-break:break-word}
+.contact a:hover{color:var(--gold)}
+.comp li{display:flex;justify-content:space-between;align-items:center;font-size:7.9pt;padding:1.1mm 0;border-bottom:.2mm solid rgba(255,255,255,.07)}
+.comp li:last-child{border:0}
+.dots{display:flex;gap:.9mm}
+.dots i{width:1.5mm;height:1.5mm;border-radius:50%;background:rgba(255,255,255,.16)}
+.dots i.on{background:var(--gold)}
+.s-item{margin-bottom:3mm}
+.s-item b{display:block;font-weight:500;font-size:8.1pt;color:#fff;line-height:1.3}
+.s-item span{display:block;color:var(--sidemute);font-size:7.3pt;line-height:1.4;margin-top:.4mm}
+.s-item em{font-style:normal;color:var(--gold);font-size:6.8pt;letter-spacing:.06em}
+.pills{display:flex;flex-wrap:wrap;gap:1.4mm}
+.pills span{font-size:6.9pt;padding:.9mm 2.2mm;border:.25mm solid rgba(63,214,198,.4);border-radius:5mm;color:#ddd9d0}
+.lang{display:flex;justify-content:space-between;font-size:7.9pt;margin-bottom:1.6mm}
+.lang em{font-style:normal;color:var(--sidemute);font-size:7.1pt}
+.side-foot{position:absolute;left:9mm;right:8mm;bottom:11mm;font:italic 500 9.5pt/1.35 var(--serif);color:var(--sidemute);text-align:center}
+
+/* ---------- main ---------- */
+main{padding:14mm 13mm 12mm 11mm;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+.head h1{font:600 37pt/.92 var(--serif);letter-spacing:-.01em;color:var(--ink)}
+.head h1 span{color:var(--red);font-style:italic;font-weight:500}
+.head .role{font:600 7.4pt var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--red);margin-top:4mm}
+.head .sub{font:italic 500 12pt var(--serif);color:var(--soft);margin-top:1.5mm}
+.rule{display:flex;align-items:center;gap:2.5mm;margin:5mm 0 5.5mm}
+.rule::before{content:"";width:12mm;height:.5mm;background:linear-gradient(90deg,var(--gold),var(--blue))}
+.rule::after{content:"";flex:1;height:.25mm;background:var(--hair)}
+.rule i{width:1.6mm;height:1.6mm;transform:rotate(45deg);border:.3mm solid var(--gold)}
+
+.sec{margin-bottom:5mm}
+.sec-t{display:flex;align-items:baseline;gap:3mm;margin-bottom:2.6mm}
+.sec-t h2{font:600 15pt/1 var(--serif);color:var(--ink)}
+.sec-t .n{font:600 6.6pt var(--sans);color:var(--red);letter-spacing:.2em}
+.sec-t::after{content:"";flex:1;height:.25mm;background:var(--hair);align-self:center}
+.profile{font-size:8.9pt;line-height:1.6;color:#2b2b30;text-align:justify;hyphens:auto}
+.profile b{font-weight:600;color:var(--ink)}
+
+.high{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5mm;margin-top:3.5mm}
+.high div{border:.25mm solid var(--hair);background:#fff;padding:2.6mm 3mm;border-top:.6mm solid;border-image:linear-gradient(90deg,var(--gold),var(--blue),var(--green)) 1}
+.high b{display:block;font:600 12.5pt/1.05 var(--serif);color:var(--ink)}
+.high span{font-size:7.1pt;color:var(--soft);line-height:1.35;display:block;margin-top:.8mm}
+
+.job{margin-bottom:4.2mm;break-inside:avoid}
+.job-h{display:flex;justify-content:space-between;align-items:baseline;gap:4mm}
+.job h3{font:600 11.6pt/1.2 var(--serif);color:var(--ink)}
+.co-logo{height:5.2mm;width:auto;vertical-align:-1.2mm;margin-right:2mm}
+.job .when{font:600 6.7pt var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--red);white-space:nowrap}
+.job .org{font-size:8pt;color:var(--soft);margin:.6mm 0 1.6mm;font-weight:500}
+.job .org em{font-style:normal;color:var(--mute);font-weight:400}
+.job p.d{color:#33333a;font-size:8.3pt;margin-bottom:1.6mm}
+.job ul li{position:relative;padding-left:4mm;margin-bottom:1mm;color:#33333a;font-size:8.2pt;line-height:1.45}
+.job ul li::before{content:"";position:absolute;left:.4mm;top:1.75mm;width:1.4mm;height:1.4mm;transform:rotate(45deg);background:linear-gradient(135deg,var(--gold),var(--blue))}
+.job ul li b{font-weight:600;color:var(--ink)}
+
+.flag{border:.25mm solid var(--hair);background:#fff;padding:3.6mm 4mm 3mm;position:relative}
+.flag::before{content:"Current";position:absolute;top:-2.3mm;right:4mm;background:linear-gradient(90deg,var(--red),var(--blue));color:#fff;font:600 6pt var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:.8mm 2.2mm}
+.pil{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm 5mm;margin-top:2.4mm}
+.pil div h4{font:600 7pt var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.8mm;display:flex;gap:1.6mm}
+.pil div h4 i{font-style:normal;color:var(--blue)}
+.pil div p{font-size:7.9pt;line-height:1.45;color:#33333a}
+
+.mini{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3.2mm 5mm}
+.mini .job{margin:0}
+.mini .job h3{font-size:10.6pt}
+.mini .venture{background:#fff;border:.25mm solid var(--hair);border-top:.6mm solid var(--green);padding:2.4mm 3mm;margin:-2.4mm 0 0}
+.mini .job-h{display:block}
+.mini .job .when{display:block;margin-top:.6mm}
+.foot{margin-top:auto;padding-top:3mm;border-top:.25mm solid var(--hair);display:flex;justify-content:space-between;font:500 6.4pt var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.foot b{color:var(--red);font-weight:600}
+
+/* ---------- screen toolbar ---------- */
+.bar{position:fixed;top:14px;right:14px;display:flex;gap:8px;z-index:5}
+.bar a,.bar button{font:600 12px var(--sans);padding:10px 16px;border-radius:2px;border:1px solid rgba(255,255,255,.2);background:#141416;color:#fff;cursor:pointer}
+.bar a.p{background:var(--red);border-color:var(--red)}
+.page{border-radius:0}
+@media print{html{background:none}.page{margin:0;box-shadow:none;break-after:page}.bar{display:none}}
+@media screen and (max-width:820px){
+  body{zoom:.46}
+  .bar{zoom:2.1}
+}
+.head .sub .sol{color:var(--red)}
+.head .sub .tags-h{font:600 6.6pt var(--sans);font-style:normal;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);vertical-align:1.5pt}
+.qr-wrap{position:absolute;left:9mm;right:8mm;bottom:10mm;text-align:center}
+#qr{width:24mm;height:24mm;margin:0 auto;padding:1.6mm;background:#fff;border-radius:2mm}
+#qr img,#qr canvas{width:100%!important;height:100%!important;display:block}
+.qr-wrap p{margin-top:2mm;font:600 6pt var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.path{margin:0 0 5mm;padding:3.4mm 4mm 3.2mm;background:#fff;border:.25mm solid var(--hair)}
+.path-t{font:600 6.4pt var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--red);margin-bottom:2.6mm}
+.path ol{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);position:relative}
+.path ol::before{content:"";position:absolute;left:1.2mm;right:1.2mm;top:1.3mm;height:.5mm;background:linear-gradient(90deg,var(--gold),var(--blue),var(--green))}
+.path li{position:relative;padding-top:4.2mm;padding-right:1.5mm}
+.path li::before{content:"";position:absolute;top:0;left:0;width:2.6mm;height:2.6mm;border-radius:50%;background:#fff;border:.5mm solid var(--blue)}
+.path li.now::before{background:var(--green);border-color:var(--green);box-shadow:0 0 0 .8mm rgba(34,168,102,.2)}
+.path b{display:block;font:600 10.5pt/1 var(--serif);color:var(--ink)}
+.path span{display:block;font-size:6.6pt;line-height:1.3;color:var(--soft);margin-top:.8mm}
+.how{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm;margin-top:4mm}
+.how .path-t{grid-column:1/-1;margin-bottom:0}
+.how div{border-left:.6mm solid;border-image:linear-gradient(var(--gold),var(--blue)) 1;padding:.4mm 0 .4mm 2.4mm}
+.how b{display:block;font:600 9.5pt var(--serif);color:var(--ink)}
+.how span{font-size:6.9pt;line-height:1.35;color:var(--soft);display:block;margin-top:.4mm}
+.h1-sm{font:600 22pt/1.02 var(--serif)!important}
+.p3 .sec{margin-bottom:3.6mm}
+.p3 .rule{margin:3.5mm 0 4mm}
+.h1-sm span{color:var(--red);font-style:italic;font-weight:500}
+.why3{display:grid;grid-template-columns:1fr 1fr;gap:2mm 3.5mm}
+.why3 div{background:#fff;border:.25mm solid var(--hair);border-left:.8mm solid var(--blue);padding:1.8mm 2.6mm}
+.why3 b{display:block;font:600 11pt/1.2 var(--serif);color:var(--ink)}
+.why3 span{display:block;font-size:7.5pt;line-height:1.45;color:var(--soft);margin-top:.6mm}
+.lab3{display:grid;gap:1.6mm}
+.lab3 div{display:grid;grid-template-columns:66mm 1fr;column-gap:4mm;padding-bottom:1.6mm;border-bottom:.25mm dashed var(--hair)}
+.lab3 div:last-child{border:0;padding-bottom:0}
+.lab3 code{grid-row:1/3;align-self:start;font:500 7pt/1.45 ui-monospace,Menlo,monospace;background:#071a24;color:#7fe6d8;border-radius:1.4mm;padding:1.8mm 2.2mm}
+.lab3 b{font:600 10pt/1.2 var(--serif);color:var(--ink)}
+.lab3 span{font-size:7.5pt;line-height:1.45;color:var(--soft)}
+.how3{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm}
+.how3 i{font:600 20pt/1 var(--serif);font-style:normal;color:var(--blue)}
+.how3 b{display:block;font:600 10.5pt var(--serif);color:var(--ink);margin-top:.6mm}
+.how3 span{display:block;font-size:7.6pt;line-height:1.4;color:var(--soft);margin-top:.5mm}
+.cta3{margin-top:auto;margin-bottom:3mm;background:linear-gradient(110deg,#071a24,#0b2a3a 60%,#0d3b33);color:#e6f3f5;padding:4.5mm 6mm;position:relative;overflow:hidden}
+.cta3::after{content:"";position:absolute;right:-12mm;top:-12mm;width:44mm;height:44mm;border-radius:50%;border:.4mm solid rgba(63,214,198,.35);box-shadow:0 0 0 6mm rgba(63,214,198,.06),0 0 0 12mm rgba(63,214,198,.04)}
+.cta3 p{font:600 17pt/1.1 var(--serif)}
+.cta3 p span{color:var(--gold);font-style:italic;font-weight:500}
+.cta3 small{display:block;margin-top:2mm;font-size:8pt;color:#9fc3cc}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+<div class="bar">
+  <a href="index.html">← Portfolio</a>
+  <button onclick="print()">Print</button>
+  <a class="p" href="assets/Emil-Mariya-Benny-Resume.pdf" download>Download PDF</a>
+</div>
+
+<!-- ===================== PAGE 1 ===================== -->
+<section class="page">
+  <aside>
+    <div class="photo"><img src="assets/emil.png" alt="Emil Mariya Benny"></div>
+
+    <div class="s-block">
+      <p class="s-title">Contact</p>
+      <ul class="contact">
+        <li><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg><a href="mailto:emilmariyab@gmail.com">emilmariyab@gmail.com</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><a href="tel:+917306874014">+91 73068 74014</a></li>
+        <li><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://www.linkedin.com/in/emil-mariya-benny">linkedin.com/in/emil-mariya-benny</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Kerala, India</span></li>
+      </ul>
+    </div>
+
+    <div class="s-block">
+      <p class="s-title">Focus Areas</p>
+      <ul class="comp">
+        <li>Business Development</li>
+        <li>Company Structuring</li>
+        <li>AI Integration</li>
+        <li>Data Strategy</li>
+        <li>Executive Assistance to MD</li>
+        <li>Executive Customer Support</li>
+        <li>Digital Marketing &amp; SEO</li>
+        <li>HR &amp; Talent Acquisition</li>
+      </ul>
+    </div>
+
+    <div class="s-block">
+      <p class="s-title">Certifications</p>
+      <div class="s-item"><b>Product Management</b><span>Great Learning</span><em>Issued Feb 2023</em></div>
+      <div class="s-item"><b>SEO</b><span>HubSpot Academy</span><em>Issued Feb 2023</em></div>
+      <div class="s-item"><b>Certificate of Achievement — Marketing Internship</b><span>Innovators and You</span><em>Oct 2020</em></div>
+    </div>
+
+    <div class="s-block">
+      <p class="s-title">Languages</p>
+      <div class="lang">English <em>Full professional</em></div>
+      <div class="lang">Hindi <em>Limited working</em></div>
+    </div>
+
+    <div class="qr-wrap"><div id="qr"></div><p>Scan · LinkedIn profile</p></div>
+  </aside>
+
+  <main>
+    <div class="head">
+      <h1>Emil Mariya<br><span>Benny</span></h1>
+      <p class="role">Business Development &amp; Structuring Specialist</p>
+      <p class="sub">Problem finder. <span class="sol">Solution provider.</span></p>
+    </div>
+    <div class="rule"><i></i></div>
+
+    <div class="sec">
+      <div class="sec-t"><span class="n">I</span><h2>Professional Profile</h2></div>
+      <p class="profile">
+        An Electronics &amp; Communication engineer who chose business — and kept the engineer's habit of taking
+        things apart to see why they don't work. I work between the boardroom and the build: hearing what leadership
+        needs, finding the bottleneck nobody has named, and closing the gap myself — with <b>AI</b>, a cleaner
+        <b>process</b>, the right <b>hire</b> or a sharper <b>campaign</b>. Currently the strategic right hand to the
+        Managing Director of <b>A Daga Steel and Industrial Corporation</b>.
+      </p>
+      <div class="high">
+        <div><b>AI builder</b><span>Apps, dashboards, content and campaigns built with AI agents</span></div>
+        <div><b>Data → decisions</b><span>Numbers that matter, in front of the person who decides</span></div>
+        <div><b>People &amp; process</b><span>HR, hiring and the structure that lets a team scale</span></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-t"><span class="n">II</span><h2>Experience</h2></div>
+
+      <div class="job flag">
+        <div class="job-h"><h3><img class="co-logo" src="assets/adaga-logo.png" alt="">Business Development &amp; Structuring Specialist</h3><span class="when">Jan 2026 — Present</span></div>
+        <p class="org">A Daga Steel and Industrial Corporation <em>· AI Integration, Data Strategy | EA to MD · 11 mos</em></p>
+        <p class="d">A senior strategic partner to the Managing Director, operating at the intersection of AI, data, and business growth. This role goes far beyond traditional executive support, driving transformation across technology, operations, and strategy at the highest level.</p>
+        <div class="pil">
+          <div><h4><i>01</i>AI Integration &amp; Innovation</h4><p>Deploying AI tools and automation across business functions to boost efficiency and enable smarter decisions. Leading an AI-first digital transformation agenda organisation-wide.</p></div>
+          <div><h4><i>02</i>Data Strategy &amp; Management</h4><p>Building and managing data infrastructure that turns raw information into leadership-level insights. Developing scalable systems to support long-term business intelligence.</p></div>
+          <div><h4><i>03</i>Executive &amp; Organisational Leadership</h4><p>Partnering with the MD on strategic planning, company structuring, and key decisions. Acting as a trusted proxy across internal operations and external engagements.</p></div>
+          <div><h4><i>04</i>Technology &amp; Digital</h4><p>Owning website management, application development, and the full digital ecosystem.</p></div>
+          <div><h4><i>05</i>Sales, Marketing &amp; Growth</h4><p>Executing sales outreach strategies and overseeing digital marketing operations. Aligning growth initiatives with the MD's business vision.</p></div>
+          <div><h4><i>06</i>Talent Acquisition &amp; HR</h4><p>Leading end-to-end hiring aligned with company strategy.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot"><span>Emil Mariya Benny</span><span>Résumé · <b>01</b> / 03</span></div>
+  </main>
+</section>
+
+<!-- ===================== PAGE 2 ===================== -->
+<section class="page">
+  <aside>
+    <div class="monogram">EMB<small>EMIL MARIYA BENNY</small></div>
+
+    <div class="s-block">
+      <p class="s-title">Education</p>
+      <div class="s-item"><b>B.Tech — Electronics and Communication</b><span>College of Engineering, Munnar</span><em>Jan 2018 — Jan 2022</em></div>
+      <div class="s-item"><span>NSS Volunteer Secretary · IEEE SB CEM PELS Vice Chair (2019) · IEEE Student Member · IEDC Student Member</span></div>
+      <div class="s-item"><b>Computer Science</b><span>St. George HSS, Kattappana</span><em>2016 — 2018</em></div>
+      <div class="s-item"><span>NCC · School Mock Parliament · Math game participant</span></div>
+    </div>
+
+    <div class="s-block">
+      <p class="s-title">Leadership &amp; Service</p>
+      <div class="s-item"><b>Volunteer Secretary</b><span>NSS, CE Munnar</span><em>2018 — Present</em></div>
+      <div class="s-item"><b>Student Volunteer</b><span>IEDC · Kerala Startup Mission</span><em>2018 — Present</em></div>
+      <div class="s-item"><span>Kites Foundation (Idukki District Coordinator) · IEEE SB CEM · code4munnar · Landslide Symposium</span></div>
+    </div>
+
+
+    <div class="s-block">
+      <p class="s-title">Skills &amp; Tools</p>
+      <div class="pills">
+        <span>Human Resources</span><span>Recruitment &amp; Onboarding</span><span>Task Management</span><span>Personal Assistance</span><span>Microsoft Excel</span><span>Confidentiality</span><span>Teamwork</span><span>E-Commerce</span><span>Product Management</span><span>SEO</span><span>Digital Marketing</span><span>Website Management</span><span>Writing</span><span>English</span><span>Python</span>
+      </div>
+    </div>
+
+    <p class="side-foot">Problem finder. Solution provider.</p>
+  </aside>
+
+  <main>
+    <div class="path">
+      <p class="path-t">Career path</p>
+      <ol>
+        <li><b>2018</b><span>B.Tech starts · Co-founds My-cart.in</span></li>
+        <li><b>2020</b><span>BD &amp; support internships</span></li>
+        <li><b>2021</b><span>AdAid · GTech μLearn · Codelattice</span></li>
+        <li><b>2022</b><span>B.Tech done · CCS Technologies</span></li>
+        <li><b>2024</b><span>EA to Founder · Conor Australia</span></li>
+        <li class="now"><b>2026</b><span>BD &amp; Structuring · A Daga</span></li>
+      </ol>
+    </div>
+
+    <div class="sec" style="margin-top:2mm">
+      <div class="sec-t"><span class="n">II</span><h2>Experience <span style="font-style:italic;font-weight:500;color:var(--mute);font-size:11pt">continued</span></h2></div>
+
+      <div class="job">
+        <div class="job-h"><h3>Executive Assistant to the Founder</h3><span class="when">Oct 2024 — Oct 2025</span></div>
+        <p class="org">Conor Australia <em>· Executive Customer Support Specialist · Full-time · Australia</em></p>
+        <p class="d">Worked closely with the founder to support strategic, operational and day-to-day business functions — beyond traditional administration, with active participation in decision-making, cross-functional coordination and business growth initiatives.</p>
+        <ul>
+          <li><b>Founder support &amp; calendar management:</b> managed the founder's schedule, prioritised meetings and supported key founder-level responsibilities.</li>
+          <li><b>Cross-department coordination:</b> oversaw and coordinated multiple departments for alignment with business goals and timely execution of tasks.</li>
+          <li><b>Website management:</b> handled website updates and performance monitoring, ensuring a smooth user experience.</li>
+          <li><b>Content &amp; SEO management:</b> planned, created and optimised content while implementing SEO strategies to improve online visibility and engagement.</li>
+          <li><b>Digital marketing:</b> managed and executed campaigns across platforms to drive brand awareness and lead generation.</li>
+          <li><b>Product management:</b> assisted in product planning, development coordination and execution for timely delivery and market relevance.</li>
+          <li><b>Hiring &amp; talent acquisition:</b> supported recruitment, including sourcing, screening and onboarding candidates.</li>
+          <li><b>Company structuring:</b> contributed to building internal processes, improving workflows and supporting organisational growth.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-h"><h3>Consultant — Design and Communication</h3><span class="when">Jul 2022 — Oct 2023</span></div>
+        <p class="org">CCS Technologies Pvt. Ltd <em>· Full-time · Kochi, Kerala, India</em></p>
+        <p class="d">Skills: Microsoft Excel, Teamwork and 19 more.</p>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="mini">
+        <div class="job">
+          <div class="job-h"><h3>Content Writer</h3><span class="when">2021 — 2022</span></div>
+          <p class="org">AdAid <em>· Part-time · Kerala</em></p>
+          <p class="d">Skills: Writing, English.</p>
+        </div>
+        <div class="job">
+          <div class="job-h"><h3>Student Member — μLearn</h3><span class="when">2021 — 2022</span></div>
+          <p class="org">Group of Technology Companies (GTech) <em>· Full-time · Kerala</em></p>
+        </div>
+        <div class="job">
+          <div class="job-h"><h3>Python Developer</h3><span class="when">Oct — Dec 2021</span></div>
+          <p class="org">Codelattice <em>· Internship · Kozhikode, Kerala</em></p>
+        </div>
+        <div class="job">
+          <div class="job-h"><h3>Business Development Intern</h3><span class="when">Sep — Oct 2020</span></div>
+          <p class="org">Innovators and You <em>· Internship</em></p>
+          <p class="d">Certificate of Achievement — Marketing Internship.</p>
+        </div>
+        <div class="job">
+          <div class="job-h"><h3>Support Intern</h3><span class="when">Sep — Oct 2020</span></div>
+          <p class="org">Muskurahat Foundation <em>· Internship</em></p>
+        </div>
+        <div class="job venture">
+          <div class="job-h"><h3>Co-Founder</h3><span class="when">Dec 2018 — Present</span></div>
+          <p class="org">My-cart.in <em>· E-commerce Business Analyst and Products Manager</em></p>
+          <p class="d">Start-up e-commerce website to buy and sell tangible goods, digital products or services online.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot"><span><a href="mailto:emilmariyab@gmail.com">emilmariyab@gmail.com</a> · <a href="tel:+917306874014">+91 73068 74014</a> · <a href="https://www.linkedin.com/in/emil-mariya-benny">LinkedIn</a></span><span>Résumé · <b>02</b> / 03</span></div>
+  </main>
+</section>
+
+
+<!-- ===================== PAGE 3 ===================== -->
+<section class="page p3">
+  <aside>
+    <div class="monogram">EMB<small>BEYOND THE CV</small></div>
+
+    <div class="s-block">
+      <p class="s-title">Open To</p>
+      <ul class="comp">
+        <li>Business Development</li>
+        <li>AI Integration &amp; Automation</li>
+        <li>Data Strategy</li>
+        <li>HR &amp; Talent Acquisition</li>
+        <li>Digital Marketing</li>
+        <li>Executive / Chief of Staff roles</li>
+      </ul>
+    </div>
+
+    <div class="s-block">
+      <p class="s-title">AI Toolkit</p>
+      <div class="pills">
+        <span>Claude</span><span>Claude Code</span><span>AI agents</span><span>MCP connectors</span><span>Prompt engineering</span><span>Automation</span><span>Canva</span><span>Meta Ads</span><span>CRM</span>
+      </div>
+    </div>
+
+    <div class="s-block">
+      <p class="s-title">Thinks In</p>
+      <div class="lang">Systems <em>how the parts connect</em></div>
+      <div class="lang">Data <em>what the numbers say</em></div>
+      <div class="lang">People <em>who makes it work</em></div>
+    </div>
+
+    <p class="side-foot">“Great ideas come from bold conversations.”</p>
+  </aside>
+
+  <main>
+    <div class="head">
+      <p class="role" style="margin-top:0">Beyond the CV</p>
+      <h1 class="h1-sm">What you get when<br>you <span>hire me</span></h1>
+    </div>
+    <div class="rule"><i></i></div>
+
+    <div class="sec">
+      <div class="sec-t"><span class="n">IV</span><h2>Why Hire Me</h2></div>
+      <div class="why3">
+        <div><b>Finds the real problem</b><span>Asks the uncomfortable "why" until the cause shows up — so the fix lands first time.</span></div>
+        <div><b>Turns AI into results</b><span>From "we should try AI" to tools a team uses every day, without waiting for a dev team.</span></div>
+        <div><b>Makes data decision-ready</b><span>Replaces gut feel with a clear view of the numbers that matter.</span></div>
+        <div><b>Grows the pipeline</b><span>Connects outreach, content and campaigns into one engine that starts conversations.</span></div>
+        <div><b>Builds teams that hold</b><span>Hires for the gap, onboards properly, and sets up processes that survive growth.</span></div>
+        <div><b>Trusted at the top</b><span>A leader's right hand — discreet, organised, able to act on their behalf.</span></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-t"><span class="n">V</span><h2>AI Lab — I Build With It</h2></div>
+      <div class="lab3">
+        <div><code>&gt; turn this business idea into a working demo app</code><b>Business apps &amp; demos</b><span>Research a need and build a working web application with AI agents, so leaders can test it instead of reading about it.</span></div>
+        <div><code>&gt; show me the numbers live, not in a monthly report</code><b>Dashboards &amp; data tools</b><span>Live views and internal tools that keep data current and in the right hands.</span></div>
+        <div><code>&gt; make our product range ready for social media</code><b>AI content studio</b><span>Imagery, catalogues, posts and short videos produced with AI and published on schedule.</span></div>
+        <div><code>&gt; research this market and draft the first outreach</code><b>Research &amp; outreach</b><span>Briefings, proposals and outreach drafted with AI, then tracked so nothing slips.</span></div>
+        <div><code>&gt; plan the campaign, set the audience, watch the spend</code><b>AI-assisted ad campaigns</b><span>Audiences, budgets and structure set up and monitored with AI connected to the ad platform.</span></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-t"><span class="n">VI</span><h2>How I Work</h2></div>
+      <div class="how3">
+        <div><i>01</i><b>Find</b><span>Locate the real bottleneck in the workflow and the data.</span></div>
+        <div><i>02</i><b>Frame</b><span>Structure the problem and the options with leadership.</span></div>
+        <div><i>03</i><b>Build</b><span>Ship the fix — an AI tool, a process, a campaign or a hire.</span></div>
+        <div><i>04</i><b>Measure</b><span>Track what changed, refine it, make it repeatable.</span></div>
+      </div>
+    </div>
+
+    <div class="cta3">
+      <p>Problem finder. <span>Solution provider.</span></p>
+      <small>Let's talk — <a href="mailto:emilmariyab@gmail.com">emilmariyab@gmail.com</a> · <a href="tel:+917306874014">+91 73068 74014</a></small>
+    </div>
+
+    <div class="foot"><span>Emil Mariya Benny</span><span>Résumé · <b>03</b> / 03</span></div>
+  </main>
+</section>
+
+<script>
+try { new QRCode(document.getElementById('qr'), { text: 'https://www.linkedin.com/in/emil-mariya-benny', width: 256, height: 256, colorDark: '#071a24', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M }); }
+catch (e) { document.querySelector('.qr-wrap').style.display = 'none'; }
+</script>
+</body>
+</html>
