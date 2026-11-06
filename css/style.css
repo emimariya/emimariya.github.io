@@ -626,3 +626,37 @@ h2 em.grad .w>span,h2 em.grad:not(:has(.w)){background:var(--grad-flow);backgrou
 .ring::before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(var(--aqua),var(--blue),var(--green),var(--aqua));animation:spin 8s linear infinite;z-index:-1}
 .ring img{animation:none!important;transform:none!important;position:relative}
 .portrait:hover .ring img{transform:none!important}
+
+/* how I work — connected flow */
+.flow{margin-top:40px;border:1px solid var(--line2);border-radius:22px;padding:28px 28px 30px;position:relative;overflow:hidden;z-index:1;
+  background:radial-gradient(80% 120% at 0% 0%,rgba(46,242,217,.08),transparent 60%),radial-gradient(80% 120% at 100% 100%,rgba(62,224,138,.07),transparent 60%),rgba(6,17,25,.85)}
+.flow-head{display:flex;justify-content:space-between;align-items:center}
+.flow-sub{font-size:10px;color:var(--green)}
+.flow-line{position:absolute;left:calc(28px + (100% - 56px - 48px)/8);right:calc(28px + (100% - 56px - 48px)/8);top:104px;height:2px;background:var(--line2)}
+.flow-line i{position:absolute;inset:0;background:var(--grad);box-shadow:0 0 12px var(--aqua);transform:scaleX(0);transform-origin:left;transition:transform 1.8s var(--ease) .3s}
+.flow.in .flow-line i{transform:scaleX(1)}
+.flow-line::after{content:"";position:absolute;top:-4px;width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:0 0 14px var(--aqua);animation:travel 4s linear infinite;opacity:0}
+.flow.in .flow-line::after{opacity:1}
+@keyframes travel{from{left:0}to{left:calc(100% - 10px)}}
+.flow-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:22px;position:relative}
+.flow-steps li{display:flex;flex-direction:column;align-items:center;text-align:center}
+.node{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font:400 20px var(--display);color:#02131a;background:var(--grad);
+  box-shadow:0 0 0 6px #050d13,0 0 0 7px rgba(46,242,217,.35),0 10px 30px -6px var(--accglow);position:relative;z-index:1;transform:scale(0);transition:transform .7s var(--spring),box-shadow .3s}
+.flow.in .node{transform:scale(1)}
+.flow.in li:nth-child(2) .node{transition-delay:.35s}.flow.in li:nth-child(3) .node{transition-delay:.7s}.flow.in li:nth-child(4) .node{transition-delay:1.05s}
+.flow-card{margin-top:18px;width:100%;border:1px solid var(--line);border-radius:16px;padding:20px 18px;background:rgba(8,21,32,.9);transition:transform .4s var(--ease),border-color .4s,box-shadow .4s;flex:1}
+.flow-steps li:hover .flow-card{transform:translateY(-6px);border-color:rgba(46,242,217,.4);box-shadow:0 24px 50px -28px var(--accglow)}
+.flow-steps li:hover .node{box-shadow:0 0 0 6px #050d13,0 0 0 7px var(--aqua),0 0 30px var(--aqua)}
+.flow-ic{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:10px;color:var(--aqua);background:rgba(46,242,217,.07);box-shadow:inset 0 0 0 1px rgba(46,242,217,.3);font-size:17px}
+.flow-card h4{font:600 19px var(--sans);margin:12px 0 6px}
+.flow-card p{color:var(--muted);font-size:14px}
+@media (max-width:760px){
+  .flow-line{left:55px;right:auto;top:96px;bottom:40px;width:2px;height:auto}
+  .flow-line i{transform:scaleY(0);transform-origin:top}.flow.in .flow-line i{transform:scaleY(1)}
+  .flow-line::after{display:none}
+  .flow-steps{grid-template-columns:1fr;gap:18px}
+  .flow-steps li{flex-direction:row;align-items:flex-start;text-align:left;gap:16px}
+  .node{flex:0 0 56px}
+  .flow-card{margin-top:0}
+}
+@media (prefers-reduced-motion:reduce){.node{transform:none}.flow-line i{transform:none}}
