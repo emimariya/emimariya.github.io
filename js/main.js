@@ -265,7 +265,6 @@
   const lines = [
     ['c', '// emil.json — the short version'],
     ['p', '{'],
-    ['kv', 'motto', '"Problem finder. Solution provider."'],
     ['kv', 'superpower', '"finding the problem before solving it"'],
     ['kv', 'builds_with_ai', '["apps", "dashboards", "content", "campaigns"]'],
     ['kv', 'thinks_in', '["systems", "data", "people"]'],
@@ -368,7 +367,7 @@
   }
   globe();
 
-  // ---- hero live log: the problem-finder loop, on repeat ----
+  // ---- hero live log: the find → build → measure loop, on repeat ----
   const logEl = $('#log');
   const LOG = [
     ['go', '› scanning workflow for friction…'],
